@@ -1,0 +1,157 @@
+@import url(./reset.css);
+
+
+.conteudo-geral {
+  display: flex;
+
+  flex-direction: row;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 60px 20px 30px 60px;
+  justify-content: space-between;  
+}
+
+.menu-pesquisa {
+  display: flex;
+
+  width: 100vw;
+  height: 60px;
+  justify-content: space-between;
+
+  flex: auto;
+  flex-wrap: wrap;
+}
+
+.icones-esquerda {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0 0 2rem;
+  gap: 40px;
+}
+
+.pesquisa {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+#icon-pesquisa {
+  background-color: #cccccc;
+  height: 30px;
+  padding: 14px;
+  align-items: center;
+  display: flex;
+  border-width: 1px 1px 1px 0;
+  border-color: hsl(0, 1%, 37%);
+  border-style: solid;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  border-width: 1px 0px 1px 1px;
+  border-color: hsl(0, 1%, 37%);
+  border-style: solid;
+}
+
+.icones-direita {
+  
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 3rem 0 0;
+  gap: 40px;
+ 
+}
+
+.conteudo-principal {
+  width: 60%;
+}
+
+.video h1 {
+  margin-top: 10px;
+}
+
+.icones {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0 0 0;
+
+  justify-content: space-between;
+}
+
+.icone-canal {
+  display: flex;
+  gap: 15px;
+}
+
+.inscreva button {
+  background-color: #cc0000;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 159px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+}
+
+.botton-submenu {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.icones span {
+  font-weight: 700;
+}
+
+#visualizacao {
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+#descricao {
+  color: #515151;
+  font-size: 14px;
+  flex-wrap: wrap;
+  overflow: auto;
+  margin-top: 1rem;
+}
+
+.indica {
+ 
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.indica-conteudo {
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  word-wrap: break-word;
+  overflow: hidden;
+  
+  margin-bottom: 5px;
+ 
+}
+
+.indica-conteudo h1 {
+  font-size: 14px;
+}
+.indica-conteudo span,
+p {
+  font-size: 12px;
+  color: #515151;
+}
+
+.indica-conteudo img {
+  min-width: 160px;
+  min-height: 90px;
+ 
+  
+  
+ 
+}
