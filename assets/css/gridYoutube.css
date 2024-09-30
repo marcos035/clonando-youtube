@@ -1,0 +1,132 @@
+@import url(../css/reset.css);
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.header-inicial{
+
+display: grid;
+grid-template-columns: 1fr 1fr 2fr 2fr 1fr ;
+grid-template-rows: 4rem;
+
+}
+
+.logo{
+    margin: 10px 0 0 30px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    
+}
+
+.pesquisa{
+    margin: 10px 0 0 0;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    display: flex;
+    flex-direction: row;
+    
+    
+    
+}
+
+.botao-pesquisa{
+    
+    display: flex; /* Torna o botão um flex container */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #cccccc;
+    border-width: 1px 1px 1px 0;
+    border-color: hsl(0, 1%, 37%);
+    border-style: solid;
+    padding: 14px 15px;
+    height: 30px;
+ 
+}
+
+#Search{
+    height: 30px; 
+  width: 400px;
+  border-width: 1px 0px 1px 1px;
+  border-color: hsl(0, 1%, 37%);
+  border-style: solid;
+
+}
+
+.icones-pesquisa{
+    margin: 10px 50px 0 0 ;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content:right;
+}
+
+
+main{
+
+    display: grid;
+    grid-template-areas: "nav main main main main" 
+                        "nav main main main main"
+                        "nav main main main main" ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;  
+    margin: 30px;
+    
+    
+
+}
+
+nav{
+   
+    grid-area: nav;
+    grid-column-start: 1;
+    grid-column-end: 2;
+   
+    
+}
+.menu-lateral{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+.principal{
+    grid-area: main;
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    
+    
+  
+
+}
+
+.alinha-principal{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    
+
+
+}
+
+.alinha-principal h4, span{
+   padding: 0 0 10px 10px ;
+}
+
